@@ -78,7 +78,7 @@ void setupNicheGraphics()
     Inputs::TwoButton *buttons = Inputs::TwoButton::getInstance(); // Shared NicheGraphics component
 
     // #0: Main User Button
-    buttons->setWiring(0, Inputs::TwoButton::getUserButtonPin());
+    buttons->setWiring(0, Inputs::TwoButton::getUserButtonPin(), true);
     buttons->setHandlerShortPress(0, [inkhud]() { inkhud->shortpress(); });
     buttons->setHandlerLongPress(0, [inkhud]() { inkhud->longpress(); });
 
