@@ -38,6 +38,7 @@ void InkHUD::Events::begin()
 
 void InkHUD::Events::onButtonShort()
 {
+    LOG_DEBUG("Short Press Detected");
     // Audio feedback (via buzzer)
     // Short tone
     playChirp();
@@ -68,6 +69,7 @@ void InkHUD::Events::onButtonShort()
 
 void InkHUD::Events::onButtonLong()
 {
+    LOG_DEBUG("Long Press Detected");
     // Audio feedback (via buzzer)
     // Slightly longer than playChirp
     playBoop();
