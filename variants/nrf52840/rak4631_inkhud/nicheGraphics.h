@@ -58,6 +58,7 @@ void setupNicheGraphics()
     inkhud->persistence->settings.rotation = (driver->height > driver->width ? 1 : 0); // Rotate 90deg to landscape, if needed
     inkhud->persistence->settings.userTiles.maxCount = 4;
     inkhud->persistence->settings.optionalFeatures.batteryIcon = true;
+    inkhud->persistence->settings.optionalFeatures.notifications = true;
 
     // Pick applets
     // Note: order of applets determines priority of "auto-show" feature
